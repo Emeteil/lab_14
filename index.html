@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Генератор резюме</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div id="resume">
+    <div class="header">
+      <img style="border-radius: 50%;" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAQABAAD/4QBWRXhpZgAATU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAABAAAARgEoAAMAAAABAAIAAAITAAMAAAABAAEAAAAAAAAAAAABAAAAAQAAAAEAAAAB/9sAQwAJBgcIBwYJCAgICgoJCw4XDw4NDQ4cFBURFyIeIyMhHiAgJSo1LSUnMiggIC4/LzI3OTw8PCQtQkZBOkY1Ozw5/9sAQwEKCgoODA4bDw8bOSYgJjk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5/8AAEQgAUABQAwEiAAIRAQMRAf/EABsAAAEFAQEAAAAAAAAAAAAAAAMCBAUGBwEA/8QALBAAAgEDBAICAgEDBQAAAAAAAQIDAAQRBRIhMUFRBhMiMnEHYYEjM0Khsf/EABcBAQEBAQAAAAAAAAAAAAAAAAEAAgP/xAAYEQEBAQEBAAAAAAAAAAAAAAAAARIRIf/aAAwDAQACEQMRAD8A02TpvWKVGAVG3qlfiw5zzSbfAVl8g1ydStvFdQckUrcCM0hGyAagUUHmgT/gQ3jqjlgKHMBKAo6FSBKBhno0B4gzFR+3r3Tp2Cuo8VH6nf29vLHFuzMxwAKiQYGVsgYYdinFrOUP5fqe6IAJlPOJRQim/vhvNQGvLtbOB5pc7UHJxVDv/kWoPfvJaXDpDnC46NX28iW6gkhYfsMVmgiMDXVo4xJC/P8AHiorBpXy8bhDqI2E8CQdH+al7j5bo1sQr3ceB6Oaz25eGRRHjc/kngVX5EBlIfa3eD6qFatP880ROpmb+FptB/UHTHnKlXVPDEVmGwKgbkgnGfdGnj+pgjRZBHDLUPV61j5o1zeC30zAXzKfFH0qFri9tpZXLsWyWJzmqJYZc7VjA29Z81aNFvXt3RwpMYB77FTS+u35CRfeDTiWMSoJF/b/ANqPsp47qx+yNw+e8VIQEiDHWBUi24OSKzn+oZOm6lDqCAhZRsfb3Wg3U5UcHise+aatJqestBIf9K3OFXvn3SLTNtQNwxVfx395pdhEkzOpUyEeFoKWU90o2RsiDksRyaf2tqsETJEzD2Mc5rNRvMixLJDJZ3AU8jA6ostzaPAm1pIpUwCkq4LD3XVs5pW3YkVR2WODSRYpNcgyrK2fx5oJwlxBCRIiq+3nafNKguGlk3mQuCP9lRtC/wCaPqPxOS0tjfW9yrxgZMLcH/FT2n/Ho30O3uIGH3N+TjPX9qeAD45qK6dKUllVbaQcgt+prt98/STfDZWrHHAdm7qK+QyCMi1++BVAwwxk5qBQQoCseD7OK3ILWxSn7IyuefFY3rUch+QXTKQBvzmrD8k+WTO72tj+IJxvHeKqX2FGJZiSTkknOahU9BfXKxKjFSAPFHt736iSUBJ91BQXAk/V+fVOSzAd/wDdOYtVMPqWYWH0qCeeDTvRLmOYlnRA2eASOarm5iAR4rmxmBxkZqxFqtAntJb+JVuJERCOFVuAKjdb1G00fSzaWcxa4cYGxshaqsclwoC/bJj1upCplusmrI6bCNnJeQlmJySTRkTjCijiMBssRx4ru7HQpkCHMwyx3bmNNLl8gezUpLapISQAG/tUVdja4Hqg9KtX2gMO6klmLgH/AI+6ibdsPtp8p2qCDUokYpVIxzmilsLweaYwycgdU4UjvOfNMVOIwWXLV3heF4pAm3HAGK6uT3SHDktXh2QK7nmuoOSeKk//2Q==" alt="Profile Picture" class="profile-pic editable" id="profilePic">
+      <div>
+        <h3 id="name" class="editable">Иванов Иван</h3>
+        <div class="title editable" id="title">💻Senior Java Developer</div>
+        <div class="contact-info editable" id="contact">😎 ivanovivanivanovich3000@thebestmail.net</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Языки</h2>
+      <div id="languages" class="languages editable">
+        Java, Python, Польский
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Опыт работы</h2>
+      <div id="experience" class="experience editable">
+        • Имеется<br>
+        • 70 лет опыта<br>
+        • Правда, не вру
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Инструменты</h2>
+      <div id="tools" class="tools editable">
+        Git, Eclipse, Docker, Молоток🔨
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Образование</h2>
+      <div id="education" class="education editable">
+        • Высшее<br>
+        • И всевысшнее🌌
+      </div>
+    </div>
+    <button id="downloadBtn" class="btn waves-effect waves-light">Скачать PDF</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

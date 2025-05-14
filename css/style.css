@@ -1,0 +1,190 @@
+:root {
+  --primary-green: #34C759;
+  --light-green: #E8F5E9;
+  --dark-gray: #1C2526;
+  --medium-gray: #6B7280;
+  --background: #F7FAF7;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--dark-gray);
+  background-color: var(--background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#resume {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  color: var(--dark-gray);
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+/*  border-radius: 50%;*/
+  object-fit: cover;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+.name {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 0;
+  color: var(--dark-gray);
+}
+
+.title {
+  font-size: 1.2em;
+  color: var(--primary-green);
+  margin: 5px 0;
+}
+
+.contact-info {
+  font-size: 1em;
+  color: var(--medium-gray);
+  margin-top: 10px;
+}
+
+.section {
+  margin: 30px 0;
+  padding: 20px;
+  background: var(--light-green);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  font-size: 1.4em;
+  color: var(--primary-green);
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.editable {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  min-height: 20px;
+}
+
+.editable:hover {
+  background: rgba(52, 199, 89, 0.1);
+}
+
+.editing {
+  background: rgba(52, 199, 89, 0.2);
+  outline: 2px solid var(--primary-green);
+  border-radius: 8px;
+}
+
+.updated {
+  animation: highlight 1s;
+}
+
+@keyframes highlight {
+  from {
+    background: rgba(52, 199, 89, 0.3);
+  }
+
+  to {
+    background: transparent;
+  }
+}
+
+#downloadBtn {
+  margin: 30px auto;
+  display: block;
+  background: var(--primary-green);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+#downloadBtn:active {
+  background: color-mix(in srgb, var(--primary-green), black 10%);
+}
+
+#downloadBtn .wave {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: wave 0.6s ease-out;
+  pointer-events: none;
+}
+
+#downloadBtn:hover {
+  background: #2ea44f;
+}
+
+.wave {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(0);
+  animation: wave 0.6s linear;
+  pointer-events: none;
+}
+
+@keyframes wave {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.languages,
+.tools,
+.experience,
+.education {
+  font-size: 1em;
+  color: var(--dark-gray);
+  line-height: 1.8;
+}
+
+input[type="file"] {
+  display: none;
+}
